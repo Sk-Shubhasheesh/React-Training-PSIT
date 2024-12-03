@@ -8,6 +8,10 @@ class ClassBasedComponent extends Component{
 
     handleClick = ()=>{
         console.log("button clicked");
+
+        this.setState({
+            showText: !this.state.showText
+        })
         
     }
 
@@ -15,10 +19,13 @@ class ClassBasedComponent extends Component{
         // access the state
         console.log(this.state);
         
-        return <div>
-            <h3>Class Based component</h3>
+        return (<div>
+            {
+                this.state.showText ?  <h3>Class Based component</h3> : null
+            }
+           
             <button onClick={this.handleClick}>Toggle Text</button>
-        </div>
+        </div>)
     }
 }
 
