@@ -3,6 +3,10 @@ import ClassBasedComponent from './components/class-based-component'
 import FunctionalComponent from './components/functional-component'
 import ProductList from './components/products'
 
+
+const dummmyProductData = ['Product 1', 'Product 2', 'Product 3'];
+
+
 function App() {
 
   return (
@@ -13,7 +17,7 @@ function App() {
 
       {/* Nexted Component Example - App -> product list -> product item -> button component
  */}
-      <ProductList name="Shubhasheesh" city="Jaunpur" />
+      <ProductList ListofProduct={dummmyProductData} name="Shubhasheesh" city="Jaunpur" />
     </div>
   )
     
