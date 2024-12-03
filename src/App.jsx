@@ -13,7 +13,7 @@ function App() {
 
       {/* Nexted Component Example - App -> product list -> product item -> button component
  */}
-      <ProductList />
+      <ProductList name="Shubhasheesh" city="Jaunpur" />
     </div>
   )
     
