@@ -2,6 +2,7 @@ import './App.css'
 import ClassBasedComponent from './components/class-based-component'
 import ContextButtonComponent from './components/context-concept/button';
 import ContextTextComponent from './components/context-concept/text';
+import FormComponent from './components/forms';
 import FunctionalComponent from './components/functional-component'
 import ProductList from './components/products'
 import UseReducerExamle from './components/use-reducer-example';
@@ -31,7 +32,9 @@ function App() {
       {/* <ContextButtonComponent />
       <ContextTextComponent /> */}
 
-      <UseReducerExamle />
+      {/* <UseReducerExamle /> */}
+
+      <FormComponent />
 
 
 
