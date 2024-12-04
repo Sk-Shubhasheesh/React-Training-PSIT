@@ -4,6 +4,7 @@ import ContextButtonComponent from './components/context-concept/button';
 import ContextTextComponent from './components/context-concept/text';
 import FunctionalComponent from './components/functional-component'
 import ProductList from './components/products'
+import UseReducerExamle from './components/use-reducer-example';
 import Users from './components/users';
 import User from './components/users';
 
@@ -27,8 +28,10 @@ function App() {
 
       {/* <Users/> */}
 
-      <ContextButtonComponent />
-      <ContextTextComponent />
+      {/* <ContextButtonComponent />
+      <ContextTextComponent /> */}
+
+      <UseReducerExamle />
 
 
 
