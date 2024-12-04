@@ -14,12 +14,12 @@ function App() {
 
       
       <h1>Rect Js Concept 2024</h1>
-      <ClassBasedComponent />
+      {/* <ClassBasedComponent /> */}
       {/* <FunctionalComponent />  */}
 
       {/* Nexted Component Example - App -> product list -> product item -> button component
  */}
-      {/* {<ProductList ListofProduct={dummmyProductData} name="Shubhasheesh" city="Jaunpur" />} */}
+      {<ProductList ListofProduct={dummmyProductData} name="Shubhasheesh" city="Jaunpur" />}
 
 
     </div>

@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 class ClassBasedComponent extends Component{
-    // State
+    // State  
     state = {
         showText : false
     }
