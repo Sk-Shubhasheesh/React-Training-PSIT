@@ -4,17 +4,23 @@ import { useState } from "react"
 
 export default function Users(){
     const[usersList, setUserList] = useState([]);
+    // Manage Loading state
+    const [pending, setPending] = useState(true);
 
     async function fetchAllUsers(){
         try {
+
+           setPending(true)
            const apiResponse = await fetch('https://dummyjson.com/users')
 
            // convert to json
            const result = await apiResponse.json();
            if(result?.users){
             setUserList(result?.users)
+            setPending(false)
            } else{
             setUserList([])
+            setPending(false)
            }
            
            
@@ -27,7 +33,7 @@ export default function Users(){
     useEffect(()=>{
         fetchAllUsers()
     },[])
-
+    if(pending) return <h1>Fetching user.....</h1>
     return (
     <div>
         <h1>All Users Lists</h1>
